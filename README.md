@@ -1,201 +1,90 @@
-# Smart Study Planner
+Student Task & Assignment Manager
+1. Project Overview
+Student Task & Assignment Manager is a Python-based command-line application designed to help students organize and manage their academic tasks and assignments.
 
-## 1. Project Overview
+The application allows students to create, view, update, delete, search, filter, and complete tasks. Task information is stored permanently in a JSON file so that the data is available even after the application is closed.
 
-Smart Study Planner is a Python-based command-line application designed to help students organize their study activities and prioritize academic topics.
+The project demonstrates important Python programming concepts such as functions, classes, lists, dictionaries, file handling, JSON storage, modular programming, exception handling, input validation, and automated testing.
 
-The application allows students to create study tasks by specifying the subject, topic, difficulty level, estimated study hours, and deadline. The system can then calculate a priority score and generate a recommended study order.
+2. Problem Statement
+Students often have multiple assignments, projects, and academic tasks with different subjects, priorities, and deadlines. Managing these tasks manually can make it difficult to track pending and completed work.
 
-The application also provides task management, search, progress tracking, reporting, input validation, and JSON-based data storage.
+This project provides a simple centralized task management system that allows students to organize their academic work and monitor their progress.
 
-The project demonstrates Python programming concepts such as classes, objects, functions, lists, dictionaries, modules, file handling, JSON, sorting, input validation, and automated testing.
+3. Objectives
+The main objectives of this project are:
 
----
+To create a simple academic task management system.
+To allow students to add and manage assignments.
+To provide task status tracking.
+To provide search and filtering functionality.
+To generate task completion statistics.
+To store task information permanently.
+To demonstrate modular Python programming.
+To implement input validation and error handling.
+To demonstrate automated testing.
+4. Features
+Task Management
+Add a new task.
+View all tasks.
+Update an existing task.
+Delete a task.
+Mark a task as completed.
+Search and Filtering
+Search tasks using keywords.
+Filter tasks by status.
+Filter tasks by priority.
+Reporting
+The application generates a summary containing:
 
-## 2. Problem Statement
+Total number of tasks.
+Number of completed tasks.
+Number of pending tasks.
+Task completion percentage.
+Data Storage
+Task information is stored in a JSON file.
 
-Students often have multiple subjects and topics to study, each with different difficulty levels, estimated study times, and deadlines. Managing these topics manually can make it difficult to determine which topic should be studied first.
-
-Smart Study Planner provides a simple solution by allowing students to organize their study tasks and generate a priority-based study plan.
-
-The system considers factors such as topic difficulty, estimated study hours, and completion status when calculating study priority.
-
----
-
-## 3. Objectives
-
-The main objectives of the project are:
-
-- To help students organize their study tasks.
-- To maintain a list of subjects and topics.
-- To record estimated study hours.
-- To record study deadlines.
-- To classify topics according to difficulty.
-- To calculate a priority score for study tasks.
-- To generate a recommended study order.
-- To track completed and pending topics.
-- To calculate overall study progress.
-- To store study information permanently.
-- To demonstrate modular Python programming.
-- To implement input validation and error handling.
-- To demonstrate automated testing.
-
----
-
-## 4. Features
-
-### 4.1 Study Task Management
-
-Users can:
-
-- Add a study task.
-- View all study tasks.
-- Update an existing study task.
-- Delete a study task.
-- Mark a study task as completed.
-
-### 4.2 Study Task Information
-
-Each study task contains:
-
-- Task ID.
-- Subject.
-- Topic.
-- Difficulty.
-- Estimated study hours.
-- Deadline.
-- Completion status.
-
-### 4.3 Smart Priority Calculation
-
-The system calculates a priority score based on:
-
-- Difficulty level.
-- Estimated study workload.
-- Completion status.
-
-Higher-priority pending tasks are placed earlier in the generated study plan.
-
-### 4.4 Smart Study Plan
-
-The application generates a recommended study order by sorting pending study tasks according to their calculated priority.
-
-### 4.5 Search
-
-Users can search for study tasks using:
-
-- Subject name.
-- Topic name.
-
-### 4.6 Progress Report
-
-The system generates a report containing:
-
-- Total topics.
-- Completed topics.
-- Pending topics.
-- Total estimated study hours.
-- Completion percentage.
-
-### 4.7 Data Storage
-
-Study task information is stored in a JSON file so that data remains available when the application is restarted.
-
-### 4.8 Input Validation
-
+Validation
 The application validates:
 
-- Subject.
-- Topic.
-- Difficulty.
-- Study hours.
-- Deadline.
-- Task ID.
+Task description.
+Subject.
+Priority.
+Deadline.
+Task ID.
+Testing
+The project contains automated tests for:
 
----
-
-## 5. Functional Modules
-
-The project contains the following major modules:
-
-### Module 1: Study Task Management
-
-Responsible for:
-
-- Creating study tasks.
-- Viewing study tasks.
-- Updating study tasks.
-- Deleting study tasks.
-- Completing study tasks.
-
-### Module 2: Smart Planning
-
-Responsible for:
-
-- Calculating priority scores.
-- Identifying pending tasks.
-- Sorting tasks according to priority.
-- Generating the recommended study plan.
-
-### Module 3: Data Storage
-
-Responsible for:
-
-- Loading study tasks from JSON.
-- Saving study tasks to JSON.
-
-### Module 4: Search
-
-Responsible for searching study tasks by subject or topic.
-
-### Module 5: Reporting
-
-Responsible for calculating study statistics and generating the study progress report.
-
-### Module 6: Validation
-
-Responsible for checking user input before processing it.
-
----
-
-## 6. Technologies Used
-
-- Python 3
-- JSON
-- Pytest
-- Git
-- GitHub
-- Visual Studio Code
-
----
-
-## 7. Python Concepts Used
-
+Task functionality.
+Input validation.
+Data storage.
+5. Technologies Used
+Python 3
+JSON
+Pytest
+Git
+GitHub
+Visual Studio Code
+6. Python Concepts Used
 This project demonstrates:
 
-- Variables and data types.
-- Conditional statements.
-- Loops.
-- Functions.
-- Lists.
-- Dictionaries.
-- Classes and objects.
-- Modules.
-- File handling.
-- JSON serialization and deserialization.
-- List comprehensions.
-- Sorting.
-- Lambda functions.
-- Input validation.
-- Exception handling.
-- Automated testing.
-
----
-
-## 8. Project Structure
-
-```text
-Smart-Study-Planner/
+Variables
+Data types
+Conditional statements
+Loops
+Functions
+Lists
+Dictionaries
+Classes and objects
+Modules
+File handling
+JSON
+Exception handling
+Input validation
+List comprehensions
+Automated testing
+7. Project Structure
+Student-Task-Assignment-Manager/
 │
 ├── README.md
 ├── statement.md
@@ -204,21 +93,129 @@ Smart-Study-Planner/
 │
 ├── src/
 │   ├── main.py
-│   ├── study_task.py
-│   ├── study_manager.py
+│   ├── task.py
+│   ├── task_manager.py
 │   ├── storage.py
 │   ├── validator.py
-│   ├── planner.py
+│   ├── search.py
 │   └── report.py
 │
 ├── data/
-│   └── study_tasks.json
+│   └── tasks.json
 │
 ├── tests/
-│   ├── test_study_task.py
+│   ├── test_task.py
 │   ├── test_validator.py
-│   └── test_planner.py
+│   └── test_storage.py
 │
 ├── screenshots/
 │
 └── docs/
+    ├── architecture.png
+    ├── workflow.png
+    ├── use_case.png
+    ├── class_diagram.png
+    └── sequence_diagram.png
+8. Installation
+Step 1: Clone the repository
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+Step 2: Open the project directory
+cd Student-Task-Assignment-Manager
+Step 3: Install dependencies
+pip install -r requirements.txt
+9. Running the Application
+Run the following command from the project root:
+
+python src/main.py
+The application will display the main menu.
+
+10. Main Menu
+The application provides the following options:
+
+1. Add Task
+2. View All Tasks
+3. Update Task
+4. Delete Task
+5. Mark Task Completed
+6. Search Task
+7. Filter Tasks
+8. Generate Report
+9. Exit
+11. Data Storage
+Task information is stored in:
+
+data/tasks.json
+The JSON file contains information such as:
+
+Task ID
+Description
+Subject
+Priority
+Deadline
+Status
+12. Testing
+The project uses Pytest for automated testing.
+
+Run:
+
+pytest
+The tests verify:
+
+Task creation.
+Task completion.
+Task conversion to dictionary.
+Input validation.
+Invalid input handling.
+Saving and loading task data.
+13. Screenshots
+Screenshots of the application will be added to the screenshots/ directory.
+
+Recommended screenshots include:
+
+Main menu.
+Adding a task.
+Viewing tasks.
+Updating a task.
+Searching/filtering tasks.
+Generated task report.
+Test results.
+14. System Architecture
+The application follows a modular architecture.
+
+User
+  |
+  v
+main.py
+  |
+  v
+Task Manager
+  |
+  +---- Validator
+  |
+  +---- Search
+  |
+  +---- Report
+  |
+  v
+Storage
+  |
+  v
+tasks.json
+15. Future Enhancements
+Possible future improvements include:
+
+Graphical user interface.
+Automatic deadline reminders.
+Calendar integration.
+Recurring tasks.
+Subject-wise progress charts.
+SQLite database.
+Login and multiple-user support.
+Desktop or web-based version.
+16. Project Status
+The project is developed as part of the VITyarthi Python Essentials course evaluation.
+
+17. Author
+Student Task & Assignment Manager
+
+Developed as an academic Python project for VITyarthi.
