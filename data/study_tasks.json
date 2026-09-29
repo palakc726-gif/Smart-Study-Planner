@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "subject": "Physics",
+        "topic": "Rotation",
+        "difficulty": "Medium",
+        "study_hours": 8.0,
+        "deadline": "02 01 2005",
+        "status": "Pending"
+    }
+]
